@@ -1,10 +1,6 @@
 name: 晚上-自动刷步数
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
     - cron: 0 12 * * *
   watch:
