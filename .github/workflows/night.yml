@@ -24,7 +24,7 @@ jobs:
         pkey='${{ secrets.PKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
-        step='${{ secrets.STEP }}'
+        step='${{ secrets.STEP-NIGHT }}'
         
         python3 main.py <<EOF
         ${pmode}
