@@ -8,7 +8,7 @@
 ### 一、Fork 此仓库
 
 ### 二、设置账号密码 
-> 添加名为  **PMODE**、**PKEY**、**USER**、**PWD**、**STEP_NOON**、**STEP_AFTER**、**STEP_NIGHT** 的变量: Settings-->Secrets-->New secret  
+> 添加名为  **PMODE**、**PKEY**、**USER**、**PWD**、**STEP_DAY**、**STEP_NOON**、**STEP_AFTER**、**STEP_NIGHT** 的变量: Settings-->Secrets-->New secret  
 >上方几项变量名请务必全部增加，防止出现不必要的错误。
 
 | Secrets |  格式  |
@@ -17,6 +17,7 @@
 | PKEY |   推送key,详见PKEY参数解释|
 | USER |   账号,仅支持手机号|
 | PWD |   密码|
+| STEP_DAY |   步数:0则为1w-2w之间随机,自定义随机范围: `18000-25000`|
 | STEP_NOON |   步数:0则为1w-2w之间随机,自定义随机范围: `18000-25000`|
 | STEP_AFTER |   步数:0则为1w-2w之间随机,自定义随机范围: `18000-25000`|
 | STEP_NIGHT |   步数:0则为1w-2w之间随机,自定义随机范围: `18000-25000`|
