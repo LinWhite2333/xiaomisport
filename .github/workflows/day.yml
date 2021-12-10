@@ -1,12 +1,8 @@
-name: 刷步数
+name: 早上-自动刷步数
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
-    - cron: 0 12 * * *
+    - cron: 0 1 * * *
   watch:
     types: started
 
@@ -28,7 +24,7 @@ jobs:
         pkey='${{ secrets.PKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
-        step='${{ secrets.STEP }}'
+        step='${{ secrets.STEP_DAY }}'
         
         python3 main.py <<EOF
         ${pmode}
